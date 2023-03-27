@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<main>
+<head>
+  <html lang="en-us">
+  <title>How to Play</title>
+  <link rel="stylesheet" href="./style.css"/>
+  <style>
+      body{
+        background-color: rgba(0, 0, 0, .8);
+    }
+  </style>
+</head>
+  
+<body>
+   <section class="container">
+		<div id="col-1">
+      <div class="center">
+		  <h1> How to Play </h1>
+      <a href="game-start.html" class="button2">Start Game</button></a>
+      <a href="index.html" class="button2">Go Back</button></a>
+      
+      </div>
+      <br>
+           
+		</div>
+   
+		<div id="col-2">
+	<h2> Set Up: </h2>
+		<p>
+		Decide the number of players and their names. Select the player amount from the dropdown menu and replace the placeholder names, then press “Start Game” again to begin.
+		</p>	
+	<h2> Game Screen: </h2>
+		<p>
+		On the left side of the game screen is the board, showcasing all the various spaces and the two card decks. On the right side is an input box for answering queries, a button to roll the dice, and a button to buy houses/hotels. Under these is the notification log, which shows everything that has happened during the game.
+		</p>	
+	<h2> Your Turn: </h2>
+		<p>
+		At the beginning of your turn, you will roll the dice. You will move forward a certain amount of spaces according to the dice roll, and then be prompted with whatever space you land on. Some spaces will require user input, which will usually be “Y” or “N” unless otherwise specified.
+		</p>
+		<p>
+		If you roll a double, you will be able to roll again, taking another turn. However, if you roll three doubles in a row, you will be sent to Parking Hell.
+		</p>		
+	<h2> Properties: </h2>
+		<p>
+		When landing on an unowned property, you may be prompted with the option to buy it or not. If you input “Y”, you will purchase the property for the specified cost. If you input “N”, nothing will happen. 
+		</p>
+		<p>
+		Landing on an owned property will force you to pay the associated rent, adding the money to whoever owns the property.
+		</p>
+		<p>
+		If you are able to purchase all properties within the same color group, you have formed a Monopoly, allowing you to collect double rent from undeveloped properties within the group, as well as allowing you to develop properties within the group.
+		</p>
+		<p>
+		To develop a property, whenever you’re able to roll the dice, press “Buy Houses/Hotels” instead. This prompts you with a list of properties you’re able to develop alongside the cost of doing so. Input the number associated with the property to purchase a house/hotel, which will increase the amount of rent you may get from other players. There is a limited amount of houses and hotels in the game, 32 houses and 12 hotels. Once you have four houses on a property, the next purchase becomes a hotel, which replaces the four houses, and is the maximum level of development.
+		</p>	
+	<h2> Utilities and Bus Stops: </h2>
+		<p>
+		Utilities and Bus Stops can be purchased and make other players pay rent when they land on them. Unlike properties, they all have the same cost, Utilities costing $150 and Bus Stops costing $200. Additionally, the rent of utilities is determined with your dice roll and a multiplier instead of set amounts.
+		</p>
+		<p>
+		Having one Utility makes the rent cost 4x a player’s dice roll, while having both makes the rent cost 10x the dice roll instead. With each owned Bus Stop, the rent cost doubles.
+		</p>	
+	<h2> Chance and Community Chest: </h2>
+		<p>
+		Upon landing on the Chance or Community Chest spaces, provided the associated deck is not empty, you will draw a random card and follow the effects described. These effects can vary between paying and receiving money or moving a certain amount or advancing to certain spaces.
+		</p>	
+	<h2> Parking Hell: </h2>
+		<p>
+		There are various ways to get into Parking Hell, either by drawing a Go to Parking Hell card, landing on Go to Parking Hell, or rolling three doubles in a row. You cannot land in this space normally.
+		</p>
+		<p>
+		While in Parking Hell, you must roll a double to try to escape. If you don’t roll a double and have a Get Out of Parking Hell Free card, you’re asked if you want to use it to escape. If you don’t have a Get Out of Parking Hell Free card or choose not to use one, you’re asked if you want to pay the parking fee of $50. If you choose not to pay the fee, your turn ends.
+		</p>
+		<p>
+		Once escaping, you move the amount of your dice roll and take your turn as normal, although your turn will not repeat even if you rolled a double.
+		</p>
+		<p>
+		If you fail to roll doubles three turns in a row in Parking Hell and do not use a Get Out of Parking Hell Free card, you will be forced to pay the parking fee.
+		</p>	
+	<h2> Other Spaces: </h2>
+		<p>
+		Passing or landing on the Union will give the player $200.
+		</p>
+		<p>
+		Landing on Go to Parking Hell will send the player straight to Parking Hell.
+		</p>
+		<p>
+		Landing on Tuition Payment will force the player to pay $200, and landing on Loan Payment will force the player to pay $100.
+		</p>
+	<h2> Bankruptcy: </h2>
+		<p>
+		If you run out of money at any point in your turn, you are bankrupt. Upon becoming bankrupt you will be prompted with a list of all your properties and be forced to select one to sell. Selling a property only gets you half the amount of the cost of the property and its development, and makes it available to purchase for everyone. You must repeat this until you have more than $0.
+		</p>
+		<p>
+		If you have sold all your properties but still do not have more than $0, you lose the game.
+		</p>
+	<h2> Winning: </h2>
+		<p>
+		Once all other players lose due to bankruptcy, you win!
+		</p>
+
+      <!-- <img src="board.PNG"  alt="UNT themed monopoly board" style='height: 100%; width: 100%; opacity: 75%; object-fit: contain'/>-->
+		</div>
+	
+	</section>
+</body>
+</main>
+</html>

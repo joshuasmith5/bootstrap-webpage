@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<main>
+<head>
+	<html lang="en-us">
+	<title>UNT-opoly</title>
+	<script type="text/javascript" src="classes.js"></script>
+	<link rel="stylesheet" href="style.css"></head>
+	<style>
+		body{
+		  background-color: rgba(0, 0, 0, .8);
+		}
+	</style>
+
+
+<body>
+	<div id="start">
+<section class="container">
+	<div id="col-1">
+		<div class="center">
+		<h1 id="title" style="color:white; text-align:center">UNT-opoly</h1>
+			<div style="color: white; text-align: center; font-size: 30px;">
+				<label for="numPlayers">
+					How many players will there be?
+				</label>
+				<select name:"numPlayers" id="numPlayers" title="How many players will there be?">
+					<option selected="selected">2</option>
+					<option>3</option>
+					<option>4</option>
+				</select>
+			</div>
+			<br>
+			<div id="p1info" style ="color: white; text-align:center; font-size: 22px;"  >
+				<label for="p1Name">
+					Player 1: 
+				</label>
+				<input type="text"  id="p1Name" maxlength="16" value="Player 1"/>
+			</div>
+			<br>
+			<div id="p2info" style ="color: white; text-align:center; font-size: 22px;" >
+				<label for="p2Name">
+					Player 2: 
+				</label>
+				<input type="text" id="p2Name" maxlength="16" value="Player 2"/>
+			</div>
+			<br>
+			<div id="p3info" style ="color: white; text-align:center; font-size: 22px;" >
+				<label for="p3Name">
+					Player 3: 
+				</label>
+				<input type="text" id="p3Name" maxlength="16" value="Player 3"/>
+			</div>
+			<br>
+			<div id="p4info" style ="color: white; text-align:center; font-size: 22px;" >
+				<label for="p4Name">
+					Player 4: 
+				</label>
+				<input type="text" id="p4Name" maxlength="16" value="Player 4"/>
+			</div>
+			<br>
+			<input type="button" class="button2" value="Start Game" onclick="playerSetup(document.getElementById('numPlayers').value);"/>
+		</div>
+	</div>
+	<div id="col-2">
+		<img src="board.PNG"  alt="UNT themed monopoly board" style='height: 100%; width: 100%; opacity: 75%; object-fit: contain'/>
+	</div>
+</section>
+</div>
+  
+<section class="game-container">
+	<div id="game">
+		<div class "board">
+			<img src="board.PNG" style='height: 870px; width: 870px; float: left; object-fit: contain'/>
+		</div>
+		<div class "info">
+			<p id="pl1name" style='font-family: Consolas, "Courier New", monospace; color: white; font-size: 24px; background-color: dimgrey'></p>
+			<p id="pl1balance" style='font-family: Consolas, "Courier New", monospace; color: white; font-size: 24px; background-color: dimgrey'></p>
+			<p id="pl2name" style='font-family: Consolas, "Courier New", monospace; color: white; font-size: 24px; background-color: dimgrey'></p>
+			<p id="pl2balance" style='font-family: Consolas, "Courier New", monospace; color: white; font-size: 24px; background-color: dimgrey'></p>
+			<p id="pl3name" style='display: none; font-family: Consolas, "Courier New", monospace; color: white; font-size: 24px; background-color: dimgrey'></p>
+			<p id="pl3balance" style='display: none; font-family: Consolas, "Courier New", monospace; color: white; font-size: 24px; background-color: dimgrey'></p>
+			<p id="pl4name" style='display: none; font-family: Consolas, "Courier New", monospace; color: white; font-size: 24px; background-color: dimgrey'></p>
+			<p id="pl4balance" style='display: none; font-family: Consolas, "Courier New", monospace; color: white; font-size: 24px; background-color: dimgrey'></p>
+			
+		</div>
+		<div class "settings" />
+		<div class "dice">
+			<button id="d20" onclick="diceRoll()" class="button3">
+				<img src="button.png" alt="Roll Dice" />
+			</button>
+      
+      <button onclick="buyHouse()" class="button3">
+		      Buy House/Hotel
+	    </button>
+      
+		</div>
+		<div class "log" >
+			<div id= "log"></div>
+			
+      <label hidden for="answer">
+		    Input:
+	    </label>
+      <input type="text" placeholder="Y/N" name="answer" id="answer" style='font-family: Consolas, "Courier New", monospace; color: white; font-size: 18px; background-color: dimgrey'>
+		</div>
+	
+	<!-- <img src="board.PNG" style='height: 870px; width: 870px; float: left; object-fit: contain'/>
+	
+	<label hidden for="answer">
+		Input:
+	</label>
+	<input type="text" placeholder="Y/N" name="answer" id="answer" size="12">
+	<button onclick="diceRoll()">
+		Roll Dice
+	</button>
+	<button onclick="buyHouse()">
+		Buy House/Hotel
+	</button>
+	
+	<section class="game-container">
+		<div id="col-1">
+		<div class= "player-info-back"></div> 
+		</div>
+		<div id="col-2">
+			 <div class= "sub-settings-back"></div> 
+			 <div class= "dice-button"></div> 
+		</div>
+		
+		<div id= "log"></div>
+	</section>-->
+	</div>
+	</section>
+</body>
+</main>
+</html>

@@ -1,0 +1,51 @@
+//Passing Go	
+  player passed the Union. Collect $200.
+//Landing on a Free Property	
+  player landed on property_name. property_name costs $amount to buy. Would you like to buy this property? Y/N
+//Landing on a Owned Property	
+  player landed on property_name. property_name is owned by owner_name. Rent is $amount. PAY
+//Landing on Tuition Payment	
+  player landed on tuition payment. This semester your tuition costs $200 after loans. PAY
+//Landing on Loan Payment	
+  player landed on federal loan payment. This month, your loan payment is $75. PAY
+//Landing on Go	
+  player landed on the UNION. Collect $200. Grab a snack and listen to the jazz bands play!
+//Landing on Voertmans	
+  player landed on Voertmans. Grab some art supplies or rent out a discounted textbook!
+//Landing on Just Visiting	
+  player parked in the Highland Street Garage. Take a breath and be glad you aren't in Parking Hell.
+//Landing on Go to Jail	
+  player is running late to class. Go straight to Parking Hell. Do not pass the Union. Do not collect $200.
+//Landing on Chance	
+  player landed on Chance Space. Grab a card! DRAW
+//Landing on Community Chest	
+  player landed on Community Chest Space. Grab a card! DRAW
+//Paying Rent	
+  player payed owner_name $amount in rent.
+//Roll Dice	
+  player rolled a dice1 and a dice2. Moving dice_result spaces.
+//Roll Double	
+  DOUBLE! player rolled a dice1 and a dice2. Moving dice_result spaces. Roll again at the end of your turn!
+//Roll Second Double	
+  A DOUBLE DOUBLE! player rolled a dice1 and a dice2. Moving dice_result spaces. Roll again at the end of your turn!
+//Rolling Third Double	
+  3 Doubles? That means trouble! Go straight to Parking Hell. Do not pass the Union. Do not collect $200.
+//Reroll Double	
+  player rolled a double! Time to roll again!
+//Mortage	
+  player selected to mortage property. You will recieve $amount. Would you like to mortage property? Y/N
+  player took out a mortage on property. No rent may be taken on this property until it is bought back.
+//Monopoly	
+  Congrats player! You have completed a monopoly. Now you may purchase houses and hotels.
+//Buying a house	
+  player selected to buy a house on property. This costs $amount. Would you like to buy a house? Y/N
+  player bought a house on property. The rent increased to $amount.
+//Selling a house	
+  player selected to sell a hotel on property. You will recieve $amount. Would you like to sell a house? Y/N
+  player sold a house on property. The rent decreased to $amount.
+//Buying a hotel	
+  player selected to buy a hotel on property. This costs $amount. Would you like to buy a hotel? Y/N
+  player bought a hotel on property. The rent increased to $amount.
+//Selling a hotel	
+  player selected to sell a hotel on property. You will recieve $amount. Would you like to sell a hotel? Y/N
+  player sold a hotel on property. The rent decreased to $amount.

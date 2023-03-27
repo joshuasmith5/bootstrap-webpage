@@ -1,0 +1,197 @@
+  html{
+    overflow-y: scroll; 
+  }
+  h1{
+    text-align: center;
+    color: white; 
+    font-size: 5vw;
+    margin: 15px;
+    display: block;
+    font-family: Verdana, Arial, sans-serif;
+  }
+
+ h2{
+    color: white; 
+    font-size: 18px;
+    margin: 15px;
+    display: block;
+    font-family: Verdana, Arial, sans-serif;
+  }
+
+  p{
+    color: white;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+ 
+  .button2 {
+    background-color: #00853E;
+    border: none;
+    color: white;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 2vw;
+    margin: 15px 25%;
+    width: 50%;
+    cursor: pointer;
+    border-radius: 8px;
+    float: left;
+    font-family: Verdana, Arial, sans-serif;
+  }
+
+  .button3 {
+    background-color: dimgrey;
+    border: none;
+    color: white;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 2vw;
+    margin: 15px 15px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-family: Verdana, Arial, sans-serif;
+  }
+
+/*
+ -figure out how to make height of button bigger
+ -remove resizability functionality for now
+ .button-dice{
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 4% 0px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 2vw;
+    margin: 30% 4%;
+    cursor: pointer;
+    width: 10%;
+    float: right;
+ }
+*/
+
+.player-info-back {
+  height: 550px;
+  width: 480px;
+  background-color: white;
+  /*float: left;
+  shape-margin: 30px;*/ 
+}
+
+.sub-settings-back {
+  height: 250px;
+  width: 260px;
+  background-color: white;
+  /*float: right;
+  shape-margin: 142px;*/
+}
+
+.dice-button{
+  height: 270px;
+  width: 260px;
+  background-color: white;
+  /*float: right;
+  shape-margin: 142px;*/
+}
+
+.notifications-back {
+  height: 238px;
+  width: 764px;
+  background-color: white;
+  /*shape-margin: 364px; */
+}
+
+.container {
+  display: flex;
+}
+
+.game-container{
+  display: flex;
+  float: right;
+}
+
+#col-1 {
+  flex: 1;
+}
+
+#col-2 {
+  flex: 1;
+}
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#game {
+	display: none;
+  	grid-template-columns: repeat(4, 1fr);
+ 	 gap: 10px;
+  	grid-auto-rows: minmax(100px, auto);
+  background-color: rgba(0, 123, 60, .8);
+	border: 2px solid black;
+	border-spacing: 3px;
+	margin: 25px;
+	float: left;
+}
+#start {
+	display: inline;
+	
+}
+
+#log {
+  display: flex;
+  flex-direction: column;
+	width: 600px;
+	height: 307px;
+	margin: 0px;
+	padding-left: 1px;
+	border: 4px solid gray;
+	font-family: Consolas, "Courier New", monospace;
+	font-size: 18px;
+	background-color: dimgrey;
+	color: white;
+	overflow-y: scroll;
+}
+
+/* .game{
+	display: none;
+  	grid-template-columns: repeat(4, 1fr);
+ 	 gap: 10px;
+  	grid-auto-rows: minmax(100px, auto);
+}*/
+
+.board{
+	grid-column: 1/2;
+	grid-row: 1/2;
+}
+
+.info{
+	grid-column: 3;
+	grid-row: 1;
+}
+
+.settings{
+	grid-column: 4;
+	grid-row: 1;
+}
+
+.dice{
+	grid-column: 4;
+	grid-row: 2;
+}
+
+.log{
+	grid-column: 3/4;
+	grid-row: 3;
+	
+}
+
